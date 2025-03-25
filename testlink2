@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Payload</title>
+</head>
+<body>
+    <h2>Welcome, <span id="userName">User</span>!</h2>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the URL parameters
+            let urlParams = new URLSearchParams(window.location.search);
+
+            // Extract 'payload' value
+            let payload = urlParams.get("payload");
+
+            // Display the value if found
+            if (payload) {
+                document.getElementById("userName").innerText = payload;
+            }
+        });
+    </script>
+</body>
+</html>
