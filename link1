@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Web URL</title>
+</head>
+<body>
+    <h1>Current Web URL</h1>
+    <p id="url"></p>
+
+    <script>
+        // Get the current URL
+        const currentUrl = window.location.href;
+
+        // Log to console
+        console.log("Current URL:", currentUrl);
+
+        // Display in HTML
+        document.getElementById("url").textContent = currentUrl;
+    </script>
+</body>
+</html>
